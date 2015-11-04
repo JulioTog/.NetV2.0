@@ -129,7 +129,7 @@
             this.tsbConsultar});
             this.tsUsuarios.Location = new System.Drawing.Point(3, 0);
             this.tsUsuarios.Name = "tsUsuarios";
-            this.tsUsuarios.Size = new System.Drawing.Size(135, 25);
+            this.tsUsuarios.Size = new System.Drawing.Size(104, 25);
             this.tsUsuarios.TabIndex = 0;
             // 
             // tsbNuevo

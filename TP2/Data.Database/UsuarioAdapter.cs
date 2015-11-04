@@ -105,7 +105,7 @@ namespace Data.Database
             try
             {
                 this.OpenConnection();
-                //Esta linea esta tapada en la guia del lab y no se ve la consulta.
+               
                 SqlCommand cmdUsuarios = new SqlCommand("select * from usuarios where id_usuario=@id", sqlConn);
                 cmdUsuarios.Parameters.Add("@id", SqlDbType.Int).Value = ID;
                 SqlDataReader drUsuarios = cmdUsuarios.ExecuteReader();
