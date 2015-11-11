@@ -29,16 +29,20 @@
         private void InitializeComponent()
         {
             this.tcCurso = new System.Windows.Forms.ToolStripContainer();
-            this.tsCurso = new System.Windows.Forms.ToolStrip();
             this.tlCurso = new System.Windows.Forms.TableLayoutPanel();
             this.dgvCurso = new System.Windows.Forms.DataGridView();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.tsCurso = new System.Windows.Forms.ToolStrip();
+            this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
+            this.tslEditar = new System.Windows.Forms.ToolStripButton();
+            this.tslEliminar = new System.Windows.Forms.ToolStripButton();
             this.tcCurso.ContentPanel.SuspendLayout();
             this.tcCurso.TopToolStripPanel.SuspendLayout();
             this.tcCurso.SuspendLayout();
             this.tlCurso.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurso)).BeginInit();
+            this.tsCurso.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcCurso
@@ -58,14 +62,6 @@
             // tcCurso.TopToolStripPanel
             // 
             this.tcCurso.TopToolStripPanel.Controls.Add(this.tsCurso);
-            // 
-            // tsCurso
-            // 
-            this.tsCurso.Dock = System.Windows.Forms.DockStyle.None;
-            this.tsCurso.Location = new System.Drawing.Point(3, 0);
-            this.tsCurso.Name = "tsCurso";
-            this.tsCurso.Size = new System.Drawing.Size(111, 25);
-            this.tsCurso.TabIndex = 0;
             // 
             // tlCurso
             // 
@@ -115,6 +111,51 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // tsCurso
+            // 
+            this.tsCurso.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsCurso.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbNuevo,
+            this.tslEditar,
+            this.tslEliminar});
+            this.tsCurso.Location = new System.Drawing.Point(3, 0);
+            this.tsCurso.Name = "tsCurso";
+            this.tsCurso.Size = new System.Drawing.Size(112, 25);
+            this.tsCurso.TabIndex = 0;
+            // 
+            // tsbNuevo
+            // 
+            this.tsbNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbNuevo.Image = global::UI.Desktop.Properties.Resources.icon_alta;
+            this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbNuevo.Name = "tsbNuevo";
+            this.tsbNuevo.Size = new System.Drawing.Size(23, 22);
+            this.tsbNuevo.Text = "toolStripButton1";
+            this.tsbNuevo.ToolTipText = "Nuevo";
+            this.tsbNuevo.Click += new System.EventHandler(this.tsbNuevo_Click);
+            // 
+            // tslEditar
+            // 
+            this.tslEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tslEditar.Image = global::UI.Desktop.Properties.Resources.icon_modifacion;
+            this.tslEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tslEditar.Name = "tslEditar";
+            this.tslEditar.Size = new System.Drawing.Size(23, 22);
+            this.tslEditar.Text = "toolStripButton1";
+            this.tslEditar.ToolTipText = "Editar";
+            this.tslEditar.Click += new System.EventHandler(this.tslEditar_Click);
+            // 
+            // tslEliminar
+            // 
+            this.tslEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tslEliminar.Image = global::UI.Desktop.Properties.Resources.icon_baja;
+            this.tslEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tslEliminar.Name = "tslEliminar";
+            this.tslEliminar.Size = new System.Drawing.Size(23, 22);
+            this.tslEliminar.Text = "toolStripButton1";
+            this.tslEliminar.ToolTipText = "Eliminar";
+            this.tslEliminar.Click += new System.EventHandler(this.tslEliminar_Click);
+            // 
             // Curso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +172,8 @@
             this.tcCurso.PerformLayout();
             this.tlCurso.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurso)).EndInit();
+            this.tsCurso.ResumeLayout(false);
+            this.tsCurso.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -143,6 +186,9 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ToolStrip tsCurso;
+        private System.Windows.Forms.ToolStripButton tsbNuevo;
+        private System.Windows.Forms.ToolStripButton tslEditar;
+        private System.Windows.Forms.ToolStripButton tslEliminar;
 
     }
 }

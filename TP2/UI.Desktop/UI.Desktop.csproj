@@ -62,6 +62,12 @@
     <Compile Include="Curso.Designer.cs">
       <DependentUpon>Curso.cs</DependentUpon>
     </Compile>
+    <Compile Include="CursoDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CursoDesktop.Designer.cs">
+      <DependentUpon>CursoDesktop.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioDesktop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Curso.resx">
       <DependentUpon>Curso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursoDesktop.resx">
+      <DependentUpon>CursoDesktop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuarioDesktop.resx">
       <DependentUpon>UsuarioDesktop.cs</DependentUpon>
