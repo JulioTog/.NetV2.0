@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace Data.Database
 {
-    class EspecialidadesAdapter : Adapter
+    public class EspecialidadesAdapter : Adapter
     {
         public List<Especialidad> GetAll()
         {
