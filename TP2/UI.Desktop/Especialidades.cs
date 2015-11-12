@@ -45,5 +45,34 @@ namespace UI.Desktop
         {
             this.Close();
         }
+
+        private void tsbNuevo_Click(object sender, EventArgs e)
+        {
+            EspecialidadesDesktop formEspecialidades = new EspecialidadesDesktop(ApplicationForm.ModoForm.Alta);
+            formEspecialidades.ShowDialog();
+            this.Listar();
+        }
+
+        private void tslEditar_Click(object sender, EventArgs e)
+        {
+            if (this.dgvEspecialidades.SelectedRows.Count != 0)
+            {
+                int ID = ((Business.Entities.Especialidad)this.dgvEspecialidades.SelectedRows[0].DataBoundItem).ID;
+                EspecialidadesDesktop formEspecialidades = new EspecialidadesDesktop(ID, ApplicationForm.ModoForm.Modificacion);
+                formEspecialidades.ShowDialog();
+                this.Listar();
+            }
+        }
+
+        private void tslEliminar_Click(object sender, EventArgs e)
+        {
+            if (this.dgvEspecialidades.SelectedRows.Count != 0)
+            {
+                int ID = ((Business.Entities.Especialidad)this.dgvEspecialidades.SelectedRows[0].DataBoundItem).ID;
+                EspecialidadesDesktop formEspecialidades = new EspecialidadesDesktop(ID, ApplicationForm.ModoForm.Baja);
+                formEspecialidades.ShowDialog();
+                this.Listar();
+            }
+        }
     }
 }

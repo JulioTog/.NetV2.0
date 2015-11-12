@@ -12,6 +12,10 @@ namespace Negocio
     public class EspecialidadesLogic : BusinessLogic
     {
         private Data.Database.EspecialidadesAdapter EspecialidadData;
+        public EspecialidadesLogic()
+        {
+            EspecialidadData = new Data.Database.EspecialidadesAdapter();
+        }
      public Especialidad GetOne(int ID)
         {
             try

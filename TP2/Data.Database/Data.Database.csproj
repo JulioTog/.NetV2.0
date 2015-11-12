@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter.cs" />
+    <Compile Include="ComisionesAdapter.cs" />
     <Compile Include="CursoAdapter.cs" />
     <Compile Include="EspecialidadesAdapter.cs" />
     <Compile Include="UsuarioAdapter.cs" />

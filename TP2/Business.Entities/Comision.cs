@@ -8,8 +8,8 @@ namespace Business.Entities
 {
     public class Comision : BusinessEntity
     {
-        private int AnioEspecialidad { get; set; }
-        private string Descripcion { get; set; }
-        private int IDPlan { get; set; }
+        public int AnioEspecialidad { get; set; }
+        public string Descripcion { get; set; }
+        public int IDPlan { get; set; }
     }
 }
