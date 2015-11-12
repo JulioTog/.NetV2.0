@@ -8,10 +8,10 @@ namespace Business.Entities
 {
     public class Materia : BusinessEntity
     {
-        private string Descripcion { get; set; }
-        private int HSSemanalas { get; set; }
-        private int HSTotales { get; set; }
-        private int IDPlan { get; set; }
+        public string Descripcion { get; set; }
+        public int HSSemanalas { get; set; }
+        public int HSTotales { get; set; }
+        public int IDPlan { get; set; }
 
     }
 }
